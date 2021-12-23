@@ -25,7 +25,7 @@ SECRET_KEY = 'm6%#!=u+2quuc%wy6i^-g)+s6ykrtpq6y_xk%a9%izr*845_8#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [Asedal.pythonanywhere.com]
 
 
 # Application definition
