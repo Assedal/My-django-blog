@@ -25,7 +25,7 @@ SECRET_KEY = 'm6%#!=u+2quuc%wy6i^-g)+s6ykrtpq6y_xk%a9%izr*845_8#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["Asedal.pythonanywhere.com"]
+ALLOWED_HOSTS = ["Asedal.pythonanywhere.com","127.0.0.1"]
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    # при локалці втав # , при онлайн зніми
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
