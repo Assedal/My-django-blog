@@ -14,23 +14,4 @@
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
-
-    <hr>
-
-    <div data-gb-custom-block data-tag="for"></div>
-
-        <div class="comment">
-            <div class="date">{{ comment.created_date }}</div>
-            <strong>{{ comment.author }}</strong>
-            <p>{{ comment.text|linebreaks }}</p>
-        </div>
-
-    <div data-gb-custom-block data-tag="empty">
-
-        <p>No comments here yet :(</p>
-
-    </div>
-
-    <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}"></div>">Add comment</a>
-
 {% endblock %}
