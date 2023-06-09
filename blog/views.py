@@ -51,5 +51,8 @@ def post_remove(request, pk):
 
 def register(request):
     if request.method == "POST":
-        form = UserCreateForm(request.POST, instance=post)
-    return render(request, 'blog/register.html')
+        form = UserCreateForm(request.POST) # filled form/i'm skipping validation for this example
+        return HttpResponseRedirect('/') # go to some other page if successfully saved
+    else:
+        form = UserCreateForm # if the user accessed the register url directly, just display the empty form
+    return render(request, 'blog/register.html',  {'form': form})
