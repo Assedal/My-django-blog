@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('accounts/login/', views.LoginView.as_view(), name='login'),
     url('accounts/logout/', views.LogoutView.as_view(next_page='/'), name='logout'),
+    url('accounts/register/', views.register , name="register"),
     url(r'', include('blog.urls')),
 ]
