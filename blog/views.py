@@ -52,4 +52,4 @@ def post_remove(request, pk):
 def register(request):
     if request.method == "POST":
         form = UserCreateForm(request.POST, instance=post)
-    return render(request, 'blog/register.html)
+    return render(request, 'blog/register.html')
